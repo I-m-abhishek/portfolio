@@ -8,7 +8,7 @@ import { SectionWrapper } from '../hoc';
 import { projects } from '../constants';
 import { fadeIn , textVariant } from '../utils/motion';
 
-const ProjectCard = ({index, name , description, tags, image , source_code_link})=>{
+const ProjectCard = ({index, name , description, tags, image , source_code_link, live_link})=>{
        return(
         <>
             <motion.div variants={fadeIn("up", "spring", index*0.5 , 0.75)}>
@@ -28,21 +28,30 @@ const ProjectCard = ({index, name , description, tags, image , source_code_link}
                 <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
                        <div onClick={()=>window.open(source_code_link, "_blank" )} className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'>
                           <img src={github.src} alt="github" className='w-1/2 h-1/2 object-contain' />
-
-                       </div>
                 </div>
+                </div>
+                {/* <div className='absolute inset-0 flex justify-end m-3 mt-14 card-img_hover'>
+                       <div onClick={()=>window.open(source_code_link, "_blank" )} className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'>
+                          <img src={github.src} alt="github" className='w-1/2 h-1/2 object-contain' />
+                </div>
+                </div> */}
               </div>
                <div className='mt-5 '>
-<h3 className='text-white font-bold text-[24px]'>{name}</h3>
+<div className="flex flex-row" >
+                  <h3 className='text-white font-bold text-[24px]'>{name}</h3>
+                 <a href={live_link} target='_blank'><img src='./images/box-arrow.svg' className=' bg-transparent h-8 w-8 p-[6px] pl-2'/></a>
+               </div>
 <p className='mt-2 text-secondary text-[14px]'>{description}</p>
                </div>
                <div className='mt-4 flex flex-wrap gap-2 '>
    {tags.map((tag)=>{
     return(
       <p key={tag.name} className={`text-[14px] ${tag.color}`}> #{tag.name} </p>
+
     )
    })}
                </div>
+               
              </Tilt>
             </motion.div>
             </>
@@ -55,18 +64,18 @@ const Works = () => {
   return (
     <>
      <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} text-center`}>
+        <p className={`${styles.sectionSubText}`}>
           My Work
         </p>
-        <h2 className={`${styles.sectionHeadText} text-center`}>
-          Projects
+        <h2 className={`${styles.sectionHeadText} `}>
+          Projects.
         </h2>
       </motion.div>
          <div className='w-full flex'>
            <motion.p  variants={fadeIn("" ,"", 0.1, 1)}
            className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
            >
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur vitae eveniet facere saepe dicta provident autem laborum quae, mollitia fugiat quisquam praesentium dignissimos quaerat quia! Provident perferendis harum eveniet neque illum minima nihil eius.
+My projects showcase my expertise in full-stack development, machine learning, and software engineering. They demonstrate my ability to build complex, user-friendly applications, optimize algorithms for accurate predictions, and create seamless, visually appealing user interfaces. My work reflects a strong focus on solving real-world problems through innovative technology solutions.
            </motion.p>
          </div>
 

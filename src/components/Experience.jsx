@@ -1,26 +1,38 @@
 "use client";
 import React from "react";
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
 import { motion } from "framer-motion";
 
-import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
-import 'react-vertical-timeline-component/style.min.css';
+import "react-vertical-timeline-component/style.min.css";
 
 import { styles } from "../styles";
 import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
+import { useInView } from "react-intersection-observer";
+
 
 const ExperienceCard = ({ experience }) => {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+  });
   return (
-    <VerticalTimelineElement 
-    visible = {true}
+    <div ref={ref} className='vertical-timeline-element'>
+
+   
+    <VerticalTimelineElement
+    
+    visible={inView}
       contentStyle={{
         background: "#1d1836",
-        color: '#fff',
+        color: "#fff",
       }}
       contentArrowStyle={{ borderRight: "7px solid  #232631" }}
       date={experience.date}
-      iconStyle={{ background: experience.iconBg}}
+      iconStyle={{ background: experience.iconBg }}
       icon={
         <div className='flex justify-center items-center w-full h-full'>
           <img
@@ -52,10 +64,12 @@ const ExperienceCard = ({ experience }) => {
         ))}
       </ul>
     </VerticalTimelineElement>
+    </div>
   );
 };
 
 const Experience = () => {
+  
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -67,14 +81,16 @@ const Experience = () => {
         </h2>
       </motion.div>
 
-      <div className='mt-20 flex flex-col'>
-        <VerticalTimeline
-        // animate={true}
+      <div  className='mt-20 flex flex-col'>
+        <VerticalTimeline 
+        // animate={false}
         >
+          
           {experiences.map((experience, index) => (
             <ExperienceCard
               key={`experience-${index}`}
               experience={experience}
+              
             />
           ))}
         </VerticalTimeline>

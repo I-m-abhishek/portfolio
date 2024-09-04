@@ -46,7 +46,7 @@ const About = () => {
     variants={fadeIn("","",0.1 , 1)}
     className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
     >
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas dolore, omnis laborum, repudiandae minus et facilis aut adipisci non porro consectetur nostrum nulla tempore molestias beatae atque hic alias fugiat fugit. Quas, veritatis. Vero rerum quia architecto cum, dolores nobis voluptate pariatur et maxime voluptas. Distinctio dolorum praesentium aperiam. Possimus facere animi necessitatibus laudantium porro consequuntur?
+    I'm a skilled software engineer with a robust foundation in development, including expertise in HTML, CSS, React.js, Next.js, Node.js, Express, MongoDB, Django, and a range of programming languages such as C, C++, Python, SQL, and JavaScript. I’m passionate about crafting efficient, scalable, and user-centric solutions, and I’m excited to collaborate with clients to turn innovative ideas into reality.
     </motion.p>
     
     <div className='mt-20 flex flex-wrap gap-10'>

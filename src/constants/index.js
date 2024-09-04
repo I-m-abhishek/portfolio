@@ -8,7 +8,7 @@ import {
     html,
     css,
     reactjs,
-    redux,
+    nextjs,
     tailwind,
     nodejs,
     mongodb,
@@ -16,13 +16,19 @@ import {
     figma,
     docker,
     meta,
-    starbucks,
+    dpa,
     tesla,
     shopify,
     carrent,
     jobit,
     tripguide,
     threejs,
+    sql,
+    python,
+    cpp,
+    project_1,
+    project_2,
+    project_3,
   } from "../assets";
   
   export const navLinks = [
@@ -42,21 +48,22 @@ import {
   
   const services = [
     {
-      title: "Web Developer",
+      title: "Software Engineer",
       icon: web,
     },
     {
-      title: "React Native Developer",
+      title: "Full-Stack Developer",
       icon: mobile,
     },
     {
-      title: "Backend Developer",
-      icon: backend,
-    },
-    {
-      title: "Content Creator",
+      title: "Competitive Coder",
       icon: creator,
     },
+    {
+      title: "Tech Enthusiast",
+      icon: backend,
+    },
+    
   ];
   
   const technologies = [
@@ -72,17 +79,17 @@ import {
       name: "JavaScript",
       icon: javascript,
     },
-    {
-      name: "TypeScript",
-      icon: typescript,
-    },
+    // {
+    //   name: "TypeScript",
+    //   icon: typescript,
+    // },
     {
       name: "React JS",
       icon: reactjs,
     },
     {
-      name: "Redux Toolkit",
-      icon: redux,
+      name: "Next JS",
+      icon: nextjs,
     },
     {
       name: "Tailwind CSS",
@@ -96,77 +103,85 @@ import {
       name: "MongoDB",
       icon: mongodb,
     },
-    {
-      name: "Three JS",
-      icon: threejs,
-    },
+    // {
+    //   name: "Three JS",
+    //   icon: threejs,
+    // },
     {
       name: "git",
       icon: git,
     },
     {
-      name: "figma",
-      icon: figma,
+      name: "sql",
+      icon: sql,
     },
     {
       name: "docker",
       icon: docker,
     },
+    {
+      name: "cpp",
+      icon: cpp,
+    },
+    {
+      name: "python",
+      icon: python,
+    },
   ];
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
-      iconBg: "#383E56",
-      date: "March 2020 - April 2021",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
+      title: "Software Development Engineer Intern",
+      company_name: "Decimal Point Analytics Pvt. Ltd.",
+      icon: dpa,
       iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      date: "May 2023 - July 2023",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Extracted and optimized data from an external API for analysis, ensuring it was in a format suitable for specific queries and database operations.",
+        "Executed precise Python queries to update the database efficiently, maintaining data accuracy and relevance.",
+        "Developed a Python-based automated email system to improve communication protocols and streamline notification processes.",
+        "Contributed to a timesheet project by enhancing functionality, updating the Django admin panel, and collaborating effectively with cross-functional teams in a remote setting to solve project challenges."
       ],
     },
-    {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
+    // {
+    //   title: "React Native Developer",
+    //   company_name: "Tesla",
+    //   icon: tesla,
+    //   iconBg: "#E6DEDD",
+    //   date: "Jan 2021 - Feb 2022",
+    //   points: [
+    //     "Developing and maintaining web applications using React.js and other related technologies.",
+    //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+    //     "Implementing responsive design and ensuring cross-browser compatibility.",
+    //     "Participating in code reviews and providing constructive feedback to other developers.",
+    //   ],
+    // },
+    // {
+    //   title: "Web Developer",
+    //   company_name: "Shopify",
+    //   icon: shopify,
+    //   iconBg: "#383E56",
+    //   date: "Jan 2022 - Jan 2023",
+    //   points: [
+    //     "Developing and maintaining web applications using React.js and other related technologies.",
+    //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+    //     "Implementing responsive design and ensuring cross-browser compatibility.",
+    //     "Participating in code reviews and providing constructive feedback to other developers.",
+    //   ],
+    // },
+    // {
+    //   title: "Full stack Developer",
+    //   company_name: "Meta",
+    //   icon: meta,
+    //   iconBg: "#E6DEDD",
+    //   date: "Jan 2023 - Present",
+    //   points: [
+    //     "Developing and maintaining web applications using React.js and other related technologies.",
+    //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+    //     "Implementing responsive design and ensuring cross-browser compatibility.",
+    //     "Participating in code reviews and providing constructive feedback to other developers.",
+    //   ],
+    // },
   ];
   
   const testimonials = [
@@ -198,12 +213,12 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "CodeX",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Built an interactive blog platform using Next.js and MongoDB, allowing seamless content management. Designed a responsive UI with Tailwind CSS for an engaging user experience.",
       tags: [
         {
-          name: "react",
+          name: "next.js",
           color: "blue-text-gradient",
         },
         {
@@ -211,54 +226,57 @@ import {
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "tailwind CSS",
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: project_1,
+      source_code_link: "https://github.com/I-m-abhishek/codex",
+      live_link: "https://codex-world.vercel.app/"
     },
     {
-      name: "Job IT",
+      name: "Solar Power Predictor",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Developed a Solar Power Predictor with ANN, accurately forecasting solar output from environmental data, and led the project to deliver a user-friendly interface.",
       tags: [
         {
-          name: "react",
+          name: "next.js",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "machine learing",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "python",
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: project_2,
+      source_code_link: "https://github.com/I-m-abhishek/Solar-Power-Prediction",
+      live_link : "https://solarpowerpredictor.vercel.app/"
     },
     {
-      name: "Trip Guide",
+      name: "Portfolio",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "A portfolio where you can learn about me, explore my technical specialties, and discover the innovative projects I've worked on. Dive in to see how I bring ideas to life through code and creativity.",
       tags: [
         {
-          name: "nextjs",
+          name: "next.js",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "three.js",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "tailwind CSS",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: project_3,
+      source_code_link: "https://github.com/I-m-abhishek/portfolio",
+      live_link: "https://abhishekkatiyar.vercel.app/"
     },
   ];
   

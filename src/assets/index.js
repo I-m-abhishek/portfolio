@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+import logo from "./ak-high-resolution-logo-transparent.png";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -16,19 +16,25 @@ import javascript from "./tech/javascript.png";
 import mongodb from "./tech/mongodb.png";
 import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
-import redux from "./tech/redux.png";
+import nextjs from "./tech/nextjs.svg";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
-
+import python from "./tech/python.png"
+import sql from "./tech/sql.png"
+import cpp from "./tech/cpp.png"
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
+import dpa from "./company/DPA-new.png";
 import tesla from "./company/tesla.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+
+import project_1 from "./pj-1.png"
+import project_2 from "./pj-2.png"
+import project_3 from "./portfolio.png"
 
 export {
   logo,
@@ -48,15 +54,21 @@ export {
   mongodb,
   nodejs,
   reactjs,
-  redux,
+  nextjs,
   tailwind,
   typescript,
   threejs,
   meta,
   shopify,
-  starbucks,
+  dpa,
   tesla,
   carrent,
   jobit,
   tripguide,
+  python,
+   sql,
+   cpp, 
+   project_1,
+   project_2,
+   project_3,
 };
