@@ -1,15 +1,12 @@
 "use client";
 import{useState, useRef} from 'react';
 import { motion } from 'framer-motion';
-import emailjs from '@emailjs/browser';
 import { styles } from '../styles';
 import { EarthCanvas } from './canvas';
 import { SectionWrapper } from '../hoc';
 import { slideIn } from '../utils/motion';
+import emailjs from '@emailjs/browser';
 
-// template_gpaueun
-// service_l4agx89
-// qwMLDkRbHqrRkOwzZ
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
@@ -22,33 +19,35 @@ const Contact = () => {
      const {name, value} = e.target;
      setForm({...form , [name] : value});
   }
+  
   const handlesubmit = (e)=>{
-      e.preventDefault();
-      setLoading(true);
-      emailjs.send("service_l4agx89" ,"template_gpaueun" , {
-        from_name : form.name,
-        to_name : 'Abhishek Katiyar',
-        from_email: form.email,
-        to_email: "akatiyar0987@gmail.com",
-        message : form.message,
-      },
-    "qwMLDkRbHqrRkOwzZ")
-    .then(()=>{
-      setLoading(false);
-      alert("Thank you. I will get back to you as soon as possible");
-
-      setForm({
-        name: '',
-        email: '',
-        message: '',
-      })
-    }, (error)=>{
-      setLoading(false);
-      console.log(error);
-      alert('Something went wrong');
-
+    e.preventDefault();
+    console.log(process.env.NEXT_PUBLIC_SERVICE_ID);
+    setLoading(true);
+    emailjs.send(process.env.NEXT_PUBLIC_SERVICE_ID ,process.env.NEXT_PUBLIC_TEMPLATE_ID , {
+      from_name : form.name,
+      to_name : 'Abhishek Katiyar',
+      from_email: form.email,
+      to_email: process.env.NEXT_PUBLIC_EMAIL,
+      message : form.message,
+    },
+  process.env.NEXT_PUBLIC_KEY)
+  .then(()=>{
+    setLoading(false);
+    alert("Thank you. I will get back to you as soon as possible");
+    setForm({
+      name: '',
+      email: '',
+      message: '',
     })
-  }
+  }, (error)=>{
+    setLoading(false);
+    console.log(error);
+    alert('Something went wrong');
+
+  })
+}
+  
   return (
     <>
     <div className='xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden'>
@@ -89,3 +88,5 @@ const Contact = () => {
 }
 
 export default SectionWrapper(Contact ,"contact");
+
+
