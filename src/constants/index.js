@@ -187,27 +187,27 @@ import {
   const testimonials = [
     {
       testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
+        "I’ve seen Abhishek’s excellent coding skills firsthand. His problem-solving and innovative approach make him a valuable asset to any team.",
+      name: "Devansh Chauhan",
+      designation: "Market Analyst",
+      company: "Futures First",
+      image: "./images/devansh.jpg",
     },
     {
       testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
+        "Abhishek is a skilled developer, delivering innovative solutions with clean, efficient code. His leadership and focus on quality make him an exceptional programmer.",
+      name: "Sandeep Patel",
+      designation: "DAA",
+      company: "ZS",
+      image: "./images/sandeep.jpg",
     },
     {
       testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
+        "Abhishek is a fast learner with versatility across programming languages, quickly fixing bugs and supporting fellow developers, making him a valuable team asset.",
+      name: "Neelabh Srivastava",
+      designation: "MTS-1",
+      company: "Oracle",
+      image: "./images/neelabh.png",
     },
   ];
   

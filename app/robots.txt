@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Disallow specific pages (if any) that you don't want crawled
+Disallow: /admin
+Disallow: /login
+
+# Sitemap location (if applicable)
+Sitemap: https://abhishekkatiyar.vercel.app/sitemap.xml
