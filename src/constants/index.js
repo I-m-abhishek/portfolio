@@ -48,21 +48,22 @@ import {
   
   const services = [
     {
-      title: "Software Engineer",
-      icon: web,
-    },
-    {
-      title: "Full-Stack Developer",
-      icon: mobile,
-    },
-    {
-      title: "Competitive Coder",
-      icon: creator,
-    },
-    {
-      title: "Tech Enthusiast",
-      icon: backend,
-    },
+  title: "Software Engineer",
+  icon: web,
+},
+{
+  title: "Backend Engineering",
+  icon: backend,
+},
+{
+  title: "Full-Stack Development",
+  icon: mobile,
+},
+{
+  title: "Data & Automation",
+  icon: creator,
+},
+    
     
   ];
   
@@ -130,6 +131,23 @@ import {
   ];
   
   const experiences = [
+
+    {
+  title: "Software Development Engineer",
+  company_name: "Decimal Point Analytics Pvt. Ltd.",
+  icon: dpa,
+  iconBg: "#E6DEDD",
+  date: "Oct 2024 - Present",
+  points: [
+    "Spearheaded a tax compliance platform using Spring Boot, JPA/Hibernate, and Oracle, automating financial reporting workflows, reducing manual effort by 70%, and centralizing filings across 30+ entities.",
+    "Owned the end-to-end development of a health insurance portal, designing scalable backend services, implementing complex business workflows, and building interactive dashboards for operational insights.",
+    "Architected large-scale Excel processing workflows handling 700K+ records per file using Apache POI, streaming readers, and batch processing, reducing execution time by 80%.",
+    "Engineered secure RESTful services using Spring Security, JWT, LDAP, and RBAC, with SSE-based real-time progress tracking for complex financial workflows.",
+    "Built responsive frontend modules using Next.js, Zustand, React Query, Axios, and AG-Grid, supporting datasets exceeding 10,000 records through efficient pagination, filtering, and data virtualization.",
+    "Developed a Python-based PDF-to-Excel automation pipeline for extracting, cleaning, and transforming data into standardized formats, reducing manual intervention by 30%.",
+    "Integrated Microsoft Graph API for automated email notifications and implemented audit logging and error handling to improve transactional reliability and reduce manual reporting effort by 50%."
+  ],
+},
     {
       title: "Software Development Engineer Intern",
       company_name: "Decimal Point Analytics Pvt. Ltd.",
@@ -143,6 +161,8 @@ import {
         "Contributed to a timesheet project by enhancing functionality, updating the Django admin panel, and collaborating effectively with cross-functional teams in a remote setting to solve project challenges."
       ],
     },
+
+    
     // {
     //   title: "React Native Developer",
     //   company_name: "Tesla",

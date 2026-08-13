@@ -22,7 +22,6 @@ const Contact = () => {
   
   const handlesubmit = (e)=>{
     e.preventDefault();
-    console.log(process.env.NEXT_PUBLIC_SERVICE_ID);
     setLoading(true);
     emailjs.send(process.env.NEXT_PUBLIC_SERVICE_ID ,process.env.NEXT_PUBLIC_TEMPLATE_ID , {
       from_name : form.name,

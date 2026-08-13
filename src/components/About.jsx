@@ -46,7 +46,9 @@ const About = () => {
     variants={fadeIn("","",0.1 , 1)}
     className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
     >
-    I'm a skilled software engineer with a robust foundation in development, including expertise in HTML, CSS, React.js, Next.js, Node.js, Express, MongoDB, Django, and a range of programming languages such as C, C++, Python, SQL, and JavaScript. I’m passionate about crafting efficient, scalable, and user-centric solutions, and I’m excited to collaborate with clients to turn innovative ideas into reality.
+    I'm a Software Engineer with 1.8+ years of experience building scalable backend systems, full-stack applications, and business automation solutions. I specialize in Java, Spring Boot, Python, Next.js, React, and SQL, with a focus on building reliable and high-performance software. <br></br>
+
+From automating complex data workflows to developing intuitive web applications, I turn business requirements into clean, efficient, and scalable solutions that deliver real-world impact.
     </motion.p>
     
     <div className='mt-20 flex flex-wrap gap-10'>

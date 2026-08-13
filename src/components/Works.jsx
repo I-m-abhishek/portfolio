@@ -75,7 +75,7 @@ const Works = () => {
            <motion.p  variants={fadeIn("" ,"", 0.1, 1)}
            className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
            >
-My projects showcase my expertise in full-stack development, machine learning, and software engineering. They demonstrate my ability to build complex, user-friendly applications, optimize algorithms for accurate predictions, and create seamless, visually appealing user interfaces. My work reflects a strong focus on solving real-world problems through innovative technology solutions.
+My projects showcase my expertise in full-stack development, backend engineering, real-time applications, and data-driven solutions. From scalable web platforms and interactive dashboards to intelligent applications and robust APIs, each project reflects my ability to turn ideas into practical, user-friendly solutions. I focus on clean architecture, performance, and solving real-world problems through technology.
            </motion.p>
          </div>
 

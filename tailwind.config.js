@@ -25,7 +25,7 @@ module.exports = {
         xs: "450px",
       },
       backgroundImage: {
-        "hero-pattern": "url('/images/herobg.png')", // Path relative to the public directory
+        "hero-pattern": "url('/images/herobg-2.png')", // Path relative to the public directory
       },
     },
   },

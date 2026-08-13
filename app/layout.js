@@ -4,8 +4,9 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Abhishek Katiyar",
-  description: "A skilled full-stack software engineer with expertise in React.js, Next.js, Node.js, Django, and MongoDB. Explore my portfolio to see innovative projects, from web development to competitive coding. Let's create efficient, scalable, and user-friendly solutions together.",
+  title: "Abhishek Katiyar | Software Engineer & Full-Stack Developer",
+  description:
+    "Software Engineer specializing in backend development, full-stack applications, and business automation. Building scalable, reliable solutions with Java, Spring Boot, Python, Next.js, and React.",
 };
 
 export default function RootLayout({ children }) {
